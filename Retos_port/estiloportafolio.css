@@ -1,0 +1,94 @@
+
+.fondo{
+    min-height: 80vh;
+    background: url(../Retos_port/fondo.png);
+    
+
+}
+.fotoestudiante{
+    width: 300px;
+    height: 300px;
+    border-bottom: 100px;
+    border-radius: 100%;
+}
+
+.encabezado{
+    margin-top: 3%;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.datospersonales{
+    width: 50%;
+    height: 200px;
+    background-color: #30117260;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    align-items: center;
+    font-weight: bolder;
+    color: bisque;
+    
+}
+
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /*min-height: 1000px;*/
+    background: #30117260;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    margin-top: 7%;
+    
+}
+
+h2{
+    color: #fff;
+    border-bottom: 2px #e29c2c dashed;
+}
+
+
+
+ol{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ol li{
+    position: relative;
+    list-style: none;
+}
+
+ol li a{
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255   , 15);
+    font-weight: bolder;
+}
+
+ol li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 4px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+ol li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
