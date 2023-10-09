@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Ingenieria Informatica</title>
+    <link rel="stylesheet" href="estilomicrositio.css">
+</head>
+<body>
+    <h1>Quiz de Ingenieria Informatica</h1>
+
+    <div class="question">
+        1. ¿Cuál de los siguientes es un lenguaje de programación de alto nivel?
+    </div>
+    <form id="question1">
+        <label>
+            <input type="radio" name="q1" value="correct"> Python
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="incorrect"> Java
+        </label><br>
+        <label>
+            <input type="radio" name="q1" value="incorrect"> Assembly
+        </label><br>
+    </form>
+
+    <div class="question">
+        2. ¿Un algoritmo es una secuencia de instrucciones que se ejecutan para resolver un problema.?
+    </div>
+    <form id="question2">
+        <label>
+            <input type="radio" name="q2" value="incorrect"> Verdadero
+        </label><br>
+        <label>
+            <input type="radio" name="q2" value="correct"> Falso
+        </label><br>
+    </form>
+
+    <div class="question">
+        3. ¿Cuál es el tipo de almacenamiento más rápido?
+    </div>
+    <form id="question3">
+        <label>
+            <input type="checkbox" name="q3a" value="incorrect"> Cinta magnética
+        </label><br>
+        <label>
+            <input type="checkbox" name="q3b" value="incorrect"> Disco duro
+        </label><br>
+        <label>
+            <input type="checkbox" name="q3c" value="correct"> Memoria RAM
+        </label><br>
+    </form>
+    
+    <div class="question">
+        4. ¿Cuál de los siguientes es un tipo de sistema operativo?
+    </div>
+    <form id="question4">
+        <label>
+            <input type="radio" name="p1" value="correct"> Windows
+        </label><br>
+        <label>
+            <input type="radio" name="p1" value="incorrect"> Linux
+        </label><br>
+        <label>
+            <input type="radio" name="p1" value="incorrect"> Android
+        </label><br>
+    </form>
+
+    <div class="question">
+        5. ¿La memoria RAM es un tipo de almacenamiento permanente.?
+    </div>
+    <form id="question5">
+        <label>
+            <input type="radio" name="p2" value="incorrect"> Verdadero
+        </label><br>
+        <label>
+            <input type="radio" name="p2" value="correct"> Falso
+        </label><br>
+    </form>
+
+    <div class="question">
+        6. ¿Cuál es la unidad de medida de la memoria RAM?
+    </div>
+    <form id="question6">
+        <label>
+            <input type="checkbox" name="p3a" value="incorrect"> Gigabyte
+        </label><br>
+        <label>
+            <input type="checkbox" name="p3b" value="incorrect"> Kilobyte
+        </label><br>
+        <label>
+            <input type="checkbox" name="p3c" value="correct"> Byte
+        </label><br>
+    </form>
+
+    <button onclick="calificar()">Calificar</button>
+    <div id="resultado"></div>
+
+    <script>
+        function calificar() {
+            let score = 0;
+
+            // Pregunta 1
+            const q1 = document.forms["question1"]["q1"].value;
+            if (q1 === "correct") {
+                score++;
+            }
+
+            // Pregunta 2
+            const q2 = document.forms["question2"]["q2"].value;
+            if (q2 === "correct") {
+                score++;
+            }
+
+            // Pregunta 3
+            const q3a = document.forms["question3"]["q3a"].checked;
+            const q3b = document.forms["question3"]["q3b"].checked;
+            const q3c = document.forms["question3"]["q3c"].checked;
+            if (q3a === false && q3b === false && q3c === true) {
+                score++;
+            }
+
+            // Pregunta 1
+            const p1 = document.forms["question4"]["p1"].value;
+            if (p1 === "correct") {
+                score++;
+            }
+
+            // Pregunta 2
+            const p2 = document.forms["question5"]["p2"].value;
+            if (p2 === "correct") {
+                score++;
+            }
+
+            // Pregunta 3
+            const p3a = document.forms["question6"]["p3a"].checked;
+            const p3b = document.forms["question6"]["p3b"].checked;
+            const p3c = document.forms["question6"]["p3c"].checked;
+            if (p3a === false && p3b === false && p3c === true) {
+                score++;
+            }
+            
+            const resultado = document.getElementById("resultado");
+            resultado.innerHTML = `Tu puntaje es: ${score}/6`;
+        }
+    </script>
+</body>
+</html>
