@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda_De_zapatos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@700&family=Barlow:wght@100&family=Mulish:wght@400;700&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik+Iso&family=Sedgwick+Ave+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor-navegacion">
+        <div class="contenido-navegacion contenedor">
+          <div class="logo">
+            <h2>
+              <span class="verde">Tie</span>nda
+              <span class="rojo">De</span> Za<span class="verde">pa</span
+              ><span class="rojo">tos</span>
+            </h2>
+          </div>
+          https://music.youtube.com/
+          <nav class="navegacion ocultar">
+            <a href="#contenedor_nosotros">Inicio</a>
+            <a href="#fabrica">Sobre Nosotros</a>
+            <a href="#mision">Misión</a>
+            <a href="#formulario-contacto">Contacto</a>
+          </nav>
+          <div class="hamburguesa"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+
+      <div class="contenido-header">
+        <div class="contenedor-encabezado">
+          <div class="texto-encabezado">
+            <h2>Your Welcome</h2>
+            <a href="#lista_compras" class="btn bordes">Il Nuestro catalogo</a>
+          </div>
+        </div>
+        <video autoplay loop muted>
+          <source src="videozapatos.mp4" />
+        </video>
+      </div>
+    </header>
+    <div class="contenedor_nosotros contenedor" id="contenedor_nosotros">
+      <div class="texto-nosotros">
+        <p class="bienvenida">Welcome</p>
+        <h1>Tienda De Zapatos</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          natus ratione rerum omnis modi minima, magni aperiam quae porro
+          tenetur culpa, doloribus iure necessitatibus quis saepe minus!
+          Assumenda, suscipit cupiditate. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Commodi natus dolorem sapiente nobis ex fugiat
+          explicabo, a eaque repellendus sunt ipsa. Facilis quisquam commodi,
+          sint consectetur eaque debitis molestiae animi.
+        </p>
+        <a href="#formulario-contacto" class="btn btn-rojo">Contactar</a>
+      </div>
+
+      <div class="imagenes-nosotros">
+        <div class="imagen1">
+          <img data-src="imagenes/nosotros1.webp" alt="Organizando un zapato" />
+        </div>
+        <div class="imagenes2">
+          <!-- data-src son atributos para agregar informacion extra por ejemplo para saber en que imagen estas haciendo click -->
+          <img
+            data-src="imagenes/nosotros2.jpg"
+            alt="foto de zapatos de hombre"
+          />
+          <img
+            data-src="imagenes/nosotros3.jpeg"
+            alt="foto de zapatos de mujer"
+          />
+        </div>
+      </div>
+    </div>
+    <section class="menu contenedor">
+      <h2 class="texto-closet">Zapatos Populares</h2>
+      <div class="botones-closet">
+        <button class="todos btn btn-verde filtros">Todos</button>
+        <button class="Tenis_hombres btn btn-verde filtros">tenis hombre</button>
+        <button class="zapatosdehombre btn btn-verde filtros">zapatos hombre</button>
+        <button class="tenisdemujer btn btn-verde filtros">tenis mujer</button>
+        <button class="taconesdemujer btn btn-verde filtros">tacones mujer</button>
+        <i id="Compras" class="ri-shopping-cart-line btn-verde filtros">
+          <div class="buy-card">
+            <ul class="nav-card">
+              <li>Imagen</li>
+              <li>Nombre</li>
+              <li>Precio</li>
+              <li>Cantidad</li>
+              <li></li>
+            </ul>
+            <div class="lista_de_compras"></div>
+            <button class="vaciar" id="vaciar_carrito">Vaciar Carrito</button>
+          </div>
+        </i>
+      </div>
+
+      <div class="closet" id="lista_compras">
+
+        <div class="prenda" data-prenda="Tenisdehombre" id="prenda">
+          <img data-src="imagenes/tennis hombre.webp" alt="tenis de hombre" />
+          <h2>Wilson Kaos</h2>
+          <p>Tennis Hombre Zapatos Tenis Profesionales Wilson Kaos Comp</p>
+          <div class="informacion_precio">
+            <p class="precio">$485900</p>
+            <button class="agregar-Carrito btn" data-id="1">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prenda" data-prenda="Tenisdehombre">
+          <img data-src="imagenes/tennis hombre1.webp" alt="tenis de hombre" />
+          <h2>Running Ad</h2>
+          <p>Zapato Tenis Zapatillas Running Ad Caballero Hombre</p>
+          <div class="informacion_precio">
+            <p class="precio">$98000</p>
+            <button class="agregar-Carrito btn" data-id="2">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prenda" data-prenda="Tenisdehombre">
+          <img data-src="imagenes/tennis hombre3.webp" alt="tenis de hombre" />
+          <h2>nick</h2>
+          <p>tenis hecho de tela de hilos de egipto</p>
+          <div class="informacion_precio">
+            <p class="precio">$5</p>
+            <button class="agregar-Carrito btn" data-id="3">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prenda" data-prenda="zapatosdehombre">
+          <img data-src="imagenes/zapatos hombre.webp" alt="zapato de hombre" />
+          <h2>TELLENZI</h2>
+          <p>Zapato Moda Hombre Tellenzi F2904 Calzado Nacional Nuevo</p>
+          <div class="informacion_precio">
+            <p class="precio">$84915</p>
+            <button class="agregar-Carrito btn" data-id="4">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prenda" data-prenda="zapatosdehombre">
+          <img
+            data-src="imagenes/zapatos hombre1.webp"
+            alt="zapato de hombre"
+          />
+          <h2>Zapato Casual</h2>
+          <p>Tenis caballero casual para toda ocasión zapatos hombre</p>
+          <div class="informacion_precio">
+            <p class="precio">$90155</p>
+            <button class="agregar-Carrito btn" data-id="5">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prenda" data-prenda="zapatosdehombre">
+          <img
+            data-src="imagenes/zapatos hombre2.webp"
+            alt="zapato de hombre"
+          />
+          <h2>Zapato para Oficina</h2>
+          <p>Zapato Hombre Oficina Casual Caballero Calzado Elegante</p>
+          <div class="informacion_precio">
+            <p class="precio">$92055</p>
+            <button class="agregar-Carrito btn" data-id="6">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prenda" data-prenda="tenisdemujer">
+          <img data-src="imagenes/tenis para mujer.webp" alt="tenis de mujer" />
+          <h2>Zapato para Oficina</h2>
+          <p>Zapato Hombre Oficina Casual Caballero Calzado Elegante</p>
+          <div class="informacion_precio">
+            <p class="precio">$92055</p>
+            <button class="agregar-Carrito btn" data-id="7">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+        <div class="prenda" data-prenda="tenisdemujer">
+          <img
+            data-src="imagenes/tenis para mujer1.webp"
+            alt="tenis de mujer"
+          />
+          <h2>Zapato para Oficina</h2>
+          <p>Zapato Hombre Oficina Casual Caballero Calzado Elegante</p>
+          <div class="informacion_precio">
+            <p class="precio">$92055</p>
+            <button class="agregar-Carrito btn" data-id="8">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prenda" data-prenda="tenisdemujer">
+          <img
+            data-src="imagenes/tenis para mujer2.webp"
+            alt="tenis de mujer"
+          />
+          <h2>Zapato para Oficina</h2>
+          <p>Zapato Hombre Oficina Casual Caballero Calzado Elegante</p>
+          <div class="informacion_precio">
+            <p class="precio">$92055</p>
+            <button class="agregar-Carrito btn" data-id="9">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prenda" data-prenda="taconesdemujer">
+          <img data-src="imagenes/tacondama.webp" alt="tacon para dama" />
+          <h2>Zapato para Oficina</h2>
+          <p>Zapato Hombre Oficina Casual Caballero Calzado Elegante</p>
+          <div class="informacion_precio">
+            <p class="precio">$92055</p>
+            <button class="agregar-Carrito btn" data-id="10">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prenda" data-prenda="taconesdemujer">
+          <img data-src="imagenes/tacondama1.webp" alt="tacon para dama" />
+          <h2>Zapato para Oficina</h2>
+          <p>Zapato Hombre Oficina Casual Caballero Calzado Elegante</p>
+          <div class="informacion_precio">
+            <p class="precio">$92055</p>
+            <button class="agregar-Carrito btn" data-id="11">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="prenda" data-prenda="taconesdemujer">
+          <img data-src="imagenes/tacondama2.webp" alt="tacon para dama" />
+          <h2>Zapato para Oficina</h2>
+          <p>Zapato Hombre Oficina Casual Caballero Calzado Elegante</p>
+          <div class="informacion_precio">
+            <p class="precio">$92055</p>
+            <button class="agregar-Carrito btn" data-id="12">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="separador" id="mision">
+      <div class="contenido-separador contenedor">
+        <h2>camina con nosotros hacia el futuro</h2>
+        <p>Empieza tu dia paso a paso</p>
+        <a href="#" class="btn btn-verde">Ordenar ahora</a>
+      </div>
+    </div>
+
+    <section class="fabrica contenedor" id="fabrica">
+      <h2>Fabrica zapatos</h2>
+      <div class="contenido-fabrica">
+        <div class="texto-fabrica">
+          <h3>
+            La excelencia está en la diversidad y el modo de progresar es
+            conocer y comparar las divesidades de productos, culturas y técnicas
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam et
+            debitis sapiente iusto ut eveniet ab eos consequuntur qui, delectus
+            obcaecati repellendus magni nemo totam voluptate dolorum ipsa at.
+            Illum.
+          </p>
+          <a href="#" class="btn btn-verde">Acerca de Nosotros</a>
+        </div>
+        <div class="imagen-fabrica">
+          <img
+            data-src="/proyecto/imagenes/fabrica.webp"
+            alt="mujeres fabricando zapatos"
+          />
+        </div>
+      </div>
+    </section>
+    <div class="formulario-contacto contenedor" id="formulario-contacto">
+      <div class="informacion-contacto">
+        <h3>Contactanos</h3>
+        <p><i class="ri-map-pin-line"></i>Carrer 20#23-49</p>
+        <p><i class="ri-mail-line"></i>correr@gmail.com</p>
+        <p><i class="ri-phone-line"></i>3107472156</p>
+        <div class="redes-sociales">
+          <i class="ri-facebook-box-fill"></i>
+          <i class="ri-twitter-x-line"></i>
+          <i class="ri-instagram-fill"></i>
+        </div>
+      </div>
+
+      <form
+        class="formulario"
+        action="https://formsubmit.co/13b81171f0df88e1a206439ec1c24e53"
+        method="post"
+      >
+        <div class="input-formulario">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" placeholder="pedro" id="nombre" />
+        </div>
+        <div class="input-formulario">
+          <label for="apellidos">Apellidos</label>
+          <input
+            type="text"
+            name="apellidos"
+            placeholder="Lincon"
+            id="apellidos"
+          />
+        </div>
+        <div class="input-formulario">
+          <label for="email">Correo</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="ejemplo@ejemplo.com"
+            id="email"
+            autocomplete="off"
+          />
+        </div>
+        <div class="input-formulario">
+          <label for="telefono">Teléfono</label>
+          <input
+            type="tel"
+            name="telefono"
+            placeholder="3207473132"
+            id="telefono"
+          />
+        </div>
+        <div class="input-formulario">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje"></textarea>
+        </div>
+        <div class="btn-formulario">
+          <button type="submit" class="btn btn-verde" value="Enviar">
+            Send
+          </button>
+        </div>
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5501/proyecto/index.html"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+      </form>
+    </div>
+    <div class="pie-pagina">
+      <div class="contenedor-piepagina">
+        <div class="info">
+          <h3>Dirección</h3>
+          <p>Carrer 20#23-49</p>
+        </div>
+        <div class="info">
+          <h3>Días especiales</h3>
+          <p>Sabados y Jueves 7am- 11pm</p>
+          <p>3107472156</p>
+        </div>
+        <div class="info">
+          <h3>Horarios</h3>
+          <p>Lunes y Domingo 7am- 11pm</p>
+          <div class="redes-sociales redes-pie">
+            <i class="ri-facebook-box-fill"></i>
+            <i class="ri-twitter-x-line"></i>
+            <i class="ri-instagram-fill"></i>
+          </div>
+        </div>
+        <div class="info">
+          <h3>Noticias</h3>
+          <p>Suscribete para recibir mas Noticias</p>
+          <input name="email" type="email" placeholder="tu correo" autocomplete="off"/>
+          <input type="submit" class="bnt btn-verde" value="Suscribete" />
+        </div>
+      </div>
+    </div>
+    <footer class="autor">
+      <p>
+        Todos los derechos reservados &copy; desarrollado por Cristian Danilo
+        Tobón Marulanda
+      </p>
+      <div class="redes-sociales redes-pie">
+        <a href="https://github.com/CristianDanilo/programacion_web"><i class='bx bxl-github' ></i></a>
+        <a href="https://crisda22.neocities.org/"><i class='bx bxs-cat' ></i></a>
+        <a href="https://instagram.com/danilo.tobon.336?igshid=MTRlc2M3ZnEwemNxZw=="><i class="ri-instagram-fill"></i></a>
+        
+      </div>
+    </footer>
+
+    <script src="../proyecto/js/carrito.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

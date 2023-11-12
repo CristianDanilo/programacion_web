@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    position: relative;
+    flex-basis: 48%;
+    height: 500px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    margin-top: 10px;
+}
+
+img {
+    display: flex;
+    height: 80%;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+.light {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(68, 0, 255);
+    border-radius: 50%;
+    position: absolute;
+    animation: moveLight 4s linear infinite; /* Animación para mover la luz */
+}
+
+@keyframes moveLight {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: 100%;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+    }
+    75% {
+        top: 100%;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
